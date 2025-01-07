@@ -1,7 +1,5 @@
 # OTP_Authentication_With_Firebase
-# Project Name
-
-## Screenshots
+# GitHub Link: 
 
 ### Screenshot 1
 ![Screenshot 1](./Screenshot%20(736).png)
