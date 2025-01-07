@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('image2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    width: 400px;
+    backdrop-filter: blur(5px); /* Adding a stronger blur effect */
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.number-input, .verification, .result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    font-size: 17px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #44a29d;
+}
+
+button {
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #44a29d;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e8e8a;
+}
+
+a {
+    font-size: 14px;
+    color: #44a29d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 50px;
+}
+
+.result div {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* This class will be used to hide the container */
+.hide-container {
+    opacity: 0; /* Makes the container invisible */
+}
